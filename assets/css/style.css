@@ -1,0 +1,10 @@
+body {
+    background-repeat: repeat;
+    background-image: url("http://www.pptbackgrounds.org/uploads/blue-crystal-lines-abstract-powerpoint-backgrounds.jpg");
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.game {
+    margin: 50px auto 50px auto;
+    
+}
