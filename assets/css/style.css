@@ -6,5 +6,71 @@ body {
 
 .game {
     margin: 50px auto 50px auto;
-    
+    max-width: 900px;
+    background: rgba(245, 247, 245, 0.6);
+    padding: 15px;
+    box-shadow: 0px, 1px, 2px, #666666;
+    border-radius: 10px;
+}
+
+.game-title {
+    font-size: 60px;
+    color: 51719a;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+}
+
+.instructions-container {
+    line-height: 25px;
+    background: rgba(245, 247, 245, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px #666666;
+}
+
+.instructions-title {
+    font-size: 24px;
+}
+
+.number-guess-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto 0 auto;
+}
+
+.number-guess {
+    text-align: center;
+    margin: 10px auto 0 auto;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 15px;
+    color: darkred;
+}
+
+.stat-bar {
+    margin: 10px;
+    padding: 10px;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 40px;
+    box-shadow: 0px 1px 2px #666666;
+}
+
+.crystal-image {
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+}
+
+#crystals {
+    margin: 0 auto;
+    max-width: 720px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
