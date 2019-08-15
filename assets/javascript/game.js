@@ -4,17 +4,17 @@ $(document).ready(function() {
 
     
     //assign values to variables
-    let targetNumber = Math.floor(Math.random() * 101) + 19; // Generate random number between 19-120
-    let crystals = $("#crystals"); 
-    let counter = 0; 
-    let wins = 0; 
-    let loses = 0
-    let crystal1 = Math.floor(Math.random() * 12) + 2; //assign and generate random number between 1-12
-    let crystal2 = Math.floor(Math.random() * 12) + 2; //assign and generate random number between 1-12
-    let crystal3 = Math.floor(Math.random() * 12) + 2; //assign and generate random number between 1-12
-    let crystal4 = Math.floor(Math.random() * 12) + 2; //assign and generate random number between 1-12
-    let numberOptions = [crystal1, crystal2, crystal3, crystal4]; // assign and create array for values
-    let crystalImages = ['./assets/images/crystal1.png', './assets/images/crystal2.png', './assets/images/crystal3.png', './assets/images/crystal4.png']; // assign and create array for images
+    var targetNumber = Math.floor(Math.random() * 101) + 19; // Generate random number between 19-120
+    var crystals = $("#crystals"); 
+    var counter = 0; 
+    var wins = 0; 
+    var loses = 0
+    var crystal1 = Math.floor(Math.random() * 12) + 2; //assign and generate random number between 1-12
+    var crystal2 = Math.floor(Math.random() * 12) + 2; //assign and generate random number between 1-12
+    var crystal3 = Math.floor(Math.random() * 12) + 2; //assign and generate random number between 1-12
+    var crystal4 = Math.floor(Math.random() * 12) + 2; //assign and generate random number between 1-12
+    var numberOptions = [crystal1, crystal2, crystal3, crystal4]; // assign and create array for values
+    var crystalImages = ['./assets/images/crystal1.png', './assets/images/crystal2.png', './assets/images/crystal3.png', './assets/images/crystal4.png']; // assign and create array for images
 
     // displays values on screen
     $("#number-to-guess").text(targetNumber); 
@@ -23,8 +23,8 @@ $(document).ready(function() {
     $('#score').text(counter); 
       
     // for loop to create crystals for every numberOption
-    for (let i = 0; i < numberOptions.length; i++) { 
-      let imageCrystal = $("<img>"); 
+    for (var i = 0; i < numberOptions.length; i++) { 
+      var imageCrystal = $("<img>"); 
       imageCrystal.addClass("crystal-image"); 
       imageCrystal.attr('src', crystalImages[i]); 
       imageCrystal.attr("data-crystalvalue", numberOptions[i]);
@@ -33,7 +33,7 @@ $(document).ready(function() {
 
     // on click event to the the value of each crystal clicked
     crystals.on("click", ".crystal-image", function() {
-      let crystalValue = ($(this).attr("data-crystalvalue"));
+      var crystalValue = ($(this).attr("data-crystalvalue"));
       crystalValue = parseInt(crystalValue);
       counter += crystalValue;
       $('#score').text(counter);
@@ -67,8 +67,8 @@ $(document).ready(function() {
         counter = 0;
         crystals.empty();
         
-        for (let i = 0; i < numberOptions.length; i++) { 
-          let imageCrystal = $("<img>"); 
+        for (var i = 0; i < numberOptions.length; i++) { 
+          var imageCrystal = $("<img>"); 
           imageCrystal.addClass("crystal-image"); 
           imageCrystal.attr('src', crystalImages[i]); 
           imageCrystal.attr("data-crystalvalue", numberOptions[i]);
