@@ -27,3 +27,28 @@
         imageCrystal.attr("src", crystalImages[i]);
         imageCrystal.attr("data-crystalvalue", numberOptions[i]);
         crystals.append(imageCrystal);
+    }
+
+    // on click even to the value of each crystal clicked
+    crystals.on("click", ".crystal-image", function() {
+        let crystalvalue = ($(this).attr("data-crystalvalue"));
+        crystalValue = parseInt(crystalValue);
+        counter += crystalValue;
+        $('#score').text(counter);
+
+    if (counter === targetNumber) {
+        wins++;
+        alert('You Win!');
+        $('#wins-count').text(wins);
+        console.log("wins: " + wins);
+        resetGame();
+    }
+
+    else if (counter >= targetNumber) {
+        loses++;
+        alert('You Lose!');
+        $('#loses-count').text(loses);
+        resetGame();
+    }
+
+    });
