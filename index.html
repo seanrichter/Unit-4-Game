@@ -1,53 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crystal Collector Game</title>
-
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script type="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystals Collector Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Pacifico|Poor+Story|Roboto|Titan+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
-
 </head>
 <body>
     <div class="game">
         <h1 class="game-title">Crystals Collector!</h1>
         <div class="instructions-container">
             <h2 class="instructions-title">Instructions</h2>
-            <p>You will be given a random number at the start of the Game.</p>
-            <p>There are four crystals.  By click on a crystal you will add a specific amount of points to your total score.</p>
-            <p>You win the game by matching your total score to the random number.  You lose the game if your total score goes above the random number.</p>
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four crystals. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</p>
             <p>The value of each crystal is hidden from you until you click on it.</p>
-            <p>Each time the game starts it will change the values of each crystal</p>
+            <p>Each time the game starts it will change the values of each crystal.</p>
         </div>
         <div id="win-lose-message"></div>
-
         <div class="number-guess-title">
             <p>Number to Guess:</p>
         </div>
-
         <div class="number-guess">
-            <span id="wins-count"></span>
+            <span id="number-to-guess"></span>
         </div>
-
         <div class="stat-bar">
             <div>Wins:
                 <span id="wins-count"></span>
             </div>
-        
             <div>Loses:
                 <span id="loses-count"></span>
             </div>
-
-            <div>score:
+            <div>Score:
                 <span id="score"></span>
             </div>
         </div>
         <div id="crystals"></div>
     </div>
-
 </body>
+
 </html>
