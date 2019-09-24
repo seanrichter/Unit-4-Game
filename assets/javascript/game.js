@@ -14,7 +14,7 @@ $(document).ready(function () {
   var crystal3 = Math.floor(Math.random() * 12) + 2; //assign and generate random number between 1-12
   var crystal4 = Math.floor(Math.random() * 12) + 2; //assign and generate random number between 1-12
   var numberOptions = [crystal1, crystal2, crystal3, crystal4]; // assign and create array for values
-  var crystalImages = ['assets\images\crystal1.jpg', 'assets\images\crystal2.jpg', 'assets\images\crystal3.jpg', 'assets\images\crystal4.jpg']; // assign and create array for images
+  var crystalImages = ['.assets\images\jason-d--XvhrIC1Mhc-unsplash.jpg', '.assets\images\jason-d-JKRXPwUoFt0-unsplash.jpg', '.assets\images\krystal-ng-1PlVbeOCd78-unsplash.jpg', '.assets\images\krystal-ng-PrQqQVPzmlw-unsplash.jpg']; // assign and create array for images
 
   // displays values on screen
   $("#number-to-guess").text(targetNumber);
@@ -63,7 +63,7 @@ $(document).ready(function () {
     crystal3 = Math.floor(Math.random() * 12) + 2;
     crystal4 = Math.floor(Math.random() * 12) + 2;
     numberOptions = [crystal1, crystal2, crystal3, crystal4];
-    crystalImages = ['assets\images\crystal1.jpg', 'assets\images\crystal2.jpg', 'assets\images\crystal3.jpg', 'assets\images\crystal4.jpg'];
+    crystalImages = ['.assets\images\jason-d--XvhrIC1Mhc-unsplash.jpg', '.assets\images\jason-d-JKRXPwUoFt0-unsplash.jpg', '.assets\images\krystal-ng-1PlVbeOCd78-unsplash.jpg', '.assets\images\krystal-ng-PrQqQVPzmlw-unsplash.jpg'];
     counter = 0;
     crystals.empty();
 
